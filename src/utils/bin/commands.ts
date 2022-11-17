@@ -243,10 +243,11 @@ export const explore = async (args: string[]): Promise<string> => {
 };
 
 export const profiles = async (args: string[]): Promise<string> => {
-  const links = [config.profile1 , config.profile2 , config.profile3 , config.profile4];
-  window.open(links[this.linkcounter],`_blank_${someIdentifier}_${this.linkcounter}`);
-  this.linkcounter++;
-  setTimeout(()=>{this.linkcounter=0},500);
+  var links = [config.profile1 , config.profile2 , config.profile3 , config.profile4];
   
+  for (var i = 0; i < links.length; i++) {
+    // will open each link in the current window
+    window.open(`${links[i]}`,'_blank');
+}
   return 'Opening profiles...';
 };
