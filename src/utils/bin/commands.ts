@@ -246,6 +246,6 @@ export const profiles = async (args: string[]): Promise<string> => {
   var locs = [ config.profile1 , config.profile2 , config.profile3 , config.profile4 ] 
 
 	for (let i = 0; i < locs.length; i=i+1) {
-		window.open(locs[i])}
+		windows.open(locs[i])}
   return 'Opening profiles...';
 };
