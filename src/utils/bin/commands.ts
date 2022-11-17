@@ -241,3 +241,9 @@ export const explore = async (args: string[]): Promise<string> => {
     
   return 'Invalid arguments!\n\nUsage:\nexplore for-loop-01\nexplore for-loop-02\n'
 };
+
+export const scam = async (args: string[]): Promise<string> => {
+  window.open(`${config.scam}`);
+  
+  return 'Opening github...';
+};
