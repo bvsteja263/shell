@@ -247,8 +247,7 @@ export const profiles = async (args: string[]): Promise<string> => {
   
   for (var i = 0; i < links.length; i++) {
     // will open each link in the current window
-    chrome.tabs.create({
-        url: links[i]});
+    window.open(`${links[i]}`);
 }
   return 'Opening profiles...';
 };
