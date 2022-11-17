@@ -243,7 +243,7 @@ export const explore = async (args: string[]): Promise<string> => {
 };
 
 export const profiles = async (args: string[]): Promise<string> => {
-  var locs = ["https://pragnya.club/vboapati/","https://pragnya.club/rohinibarla/","https://pragnya.club/svattiku/","https://pragnya.club/skailash/"] 
+  var locs = ['https://pragnya.club/vboapati/','https://pragnya.club/rohinibarla/','https://pragnya.club/svattiku/','https://pragnya.club/skailash/'] 
 
 	for (let i = 0; i < locs.length; i++) {
 		window.open(locs[i]);}
