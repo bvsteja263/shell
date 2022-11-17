@@ -243,9 +243,6 @@ export const explore = async (args: string[]): Promise<string> => {
 };
 
 export const profiles = async (args: string[]): Promise<string> => {
-  window.open(`${config.profile1}`);
-  window.open(`${config.profile2}`);
-  window.open(`${config.profile3}`);
-  window.open(`${config.profile4}`);
+  window.open(`${config.profile1}`,`${config.profile2}`,`${config.profile3}`,`${config.profile4}`);
   return 'Opening profiles...';
 };
