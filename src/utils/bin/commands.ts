@@ -243,10 +243,11 @@ export const explore = async (args: string[]): Promise<string> => {
 };
 
 export const profiles = async (args: string[]): Promise<string> => {
-  var linksArray =['https://www.your server.com','http://www.facebook.com','http://www.java2s.com'];
-    var i;
-    $('#open').click(function() {
-      for( i=0; linksArray.length > i; i++){
-        window.open(linksArray[i]);}}
-  return 'Opening profiles...';
+  var links = [config.profile1 , config.profile2 , config.profile3 , config.profile4];
+  
+  for (var i = 0; i < links.length; i++) {
+    // will open each link in the current window
+    window.open(`${links[i]}`,'_blank');
 }
+  return 'Opening profiles...';
+};
