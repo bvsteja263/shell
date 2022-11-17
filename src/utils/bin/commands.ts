@@ -243,8 +243,12 @@ export const explore = async (args: string[]): Promise<string> => {
 };
 
 export const profiles = async (args: string[]): Promise<string> => {
-  var links = [config.profile1 , config.profile2 , config.profile3 , config.profile4];
-  for (var i = 0; i < links.length; i++) {
-       links[i].target = "_blank";}
+  var links = config.profiles;
+
+for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+  if (links[i].hostname != window.location.hostname) {
+    links[i].target = '_blank';
+  } 
+}
   return 'Opening profiles...';
 };

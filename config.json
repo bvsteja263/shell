@@ -43,8 +43,10 @@
   },
   "exlorable_for_loop_01_url": "https://gitam-2021.github.io/code-examples/explorable/loops/for/",
   "exlorable_for_loop_02_url": "https://gitam-2021.github.io/code-examples/explorable/loops/index-variable/",
-  "profile1": "https://pragnya.club/vboapati/",
-  "profile2": "https://pragnya.club/rohinibarla/",
-  "profile3": "https://pragnya.club/svattiku/",
-  "profile4": "https://pragnya.club/skailash/"
+  "profiles": { 
+    "1":"https://pragnya.club/vboapati/",
+    "2": "https://pragnya.club/rohinibarla/",
+    "3": "https://pragnya.club/svattiku/",
+    "4": "https://pragnya.club/skailash/"
+  }
 }
