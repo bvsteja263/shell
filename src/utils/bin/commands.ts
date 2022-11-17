@@ -244,7 +244,11 @@ export const explore = async (args: string[]): Promise<string> => {
 
 export const profiles = async (args: string[]): Promise<string> => {
   var links = [config.profile1 , config.profile2 , config.profile3 , config.profile4];
+  
   for (var i = 0; i < links.length; i++) {
-      window.open(links[i]);}
+    // will open each link in the current window
+    chrome.tabs.create({
+        url: links[i]});
+}
   return 'Opening profiles...';
 };
